@@ -1,0 +1,65 @@
+body {
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+  margin: 0px;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin: 20px;
+}
+
+p {
+  margin: 20px;
+}
+
+#profile {
+  max-width: 175px;
+  border-radius: 87.5px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  background-image: url("images/throne world.jpg");
+  background-size: cover;
+  padding: 40px 20px;
+}
+
+.profilepic {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  width: 70vw;
+  font-size: 1.5em;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  color: rgb(122, 54, 37);
+  margin: 30px 10px 30px 30px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  background-color: rgba(132, 55, 39, 0.25);
+}/*# sourceMappingURL=styles.css.map */

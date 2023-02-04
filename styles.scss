@@ -1,0 +1,58 @@
+@use "variables" as *;
+@use "base" as *;
+
+body {
+    margin: 0px;
+    font-family: $betterFont;
+}
+img {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+}
+h1 {
+    margin: $myMargin;
+}
+p {
+    margin: $myMargin;
+}
+#profile {
+    max-width: 175px;
+    border-radius: 87.5px;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/throne\ world.jpg");
+    background-size: cover;
+    padding: 40px 20px;
+}
+.profilepic {
+    display: flex;
+    justify-content: center;
+    width: $thirtywide;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    color: $bannercolor;
+    width: $seventywide;
+    font-size: $fontsize;
+}
+.middle {
+    display: flex;
+    flex-direction: row;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    width: $thirtywide;
+    color: $bodycolor;
+    margin: 30px 10px 30px 30px;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    width: $seventywide;
+    background-color: $bgcolor;
+}
