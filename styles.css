@@ -23,6 +23,14 @@ p {
   font-family: "Catamaran", sans-serif;
 }
 
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: rgba(132, 55, 39, 0.25);
+}
+
 #profile {
   max-width: 200px;
   border-radius: 100px;

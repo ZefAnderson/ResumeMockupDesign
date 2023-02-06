@@ -9,15 +9,24 @@ img {
     width: 100%;
     height: auto;
 }
-h1 {
-    margin: $myMargin;
-    font-family: $betterFont;
+h1 h2 p {
+    @include words;
 }
-h2 {
-    margin: $myMargin;
-    font-family: $betterFont;
+a:visited {
+    color: blue;
 }
-p {
+a:hover {
+    color: $bgcolor;
+}
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin words {
     margin: $myMargin;
     font-family: $betterFont;
 }
@@ -26,8 +35,7 @@ p {
     border-radius: 100px;
 }
 .top {
-    display: flex;
-    flex-direction: row;
+    @include row;
     background-image: url("images/throneworld.jpg");
     background-size: cover;
     padding: 40px 20px;
@@ -38,31 +46,25 @@ p {
     width: $fourtywide;
 }
 .banner {
-    display: flex;
-    flex-direction: column;
+    @include column;
     color: $bannercolor;
     width: $sixtywide;
     font-size: 1.5em;
     padding-left: 50px;
 }
 .middle {
-    display: flex;
-    flex-direction: row;
+    @include row;
 }
 .left {
-    display: flex;
-    flex-direction: column;
+    @include column;
     width: $fourtywide;
     color: $bodycolor;
     margin: 30px 10px 30px 30px;
 }
 .right {
-    display: flex;
-    flex-direction: column;
+    @extend .left;
     width: $sixtywide;
     background-color: $bgcolor;
-    color: $bodycolor;
-    padding: 30px 10px 30px 30px;
 }
 .contact {
     margin: 0px 20px;
