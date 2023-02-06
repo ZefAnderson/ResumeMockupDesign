@@ -25,7 +25,7 @@ p {
 .top {
   display: flex;
   flex-direction: row;
-  background-image: url("images/throne world.jpg");
+  background-image: url("images/throneworld.jpg");
   background-size: cover;
   padding: 40px 20px;
 }
