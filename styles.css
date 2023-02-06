@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img {
@@ -11,15 +10,22 @@ img {
 
 h1 {
   margin: 20px;
+  font-family: "Catamaran", sans-serif;
+}
+
+h2 {
+  margin: 20px;
+  font-family: "Catamaran", sans-serif;
 }
 
 p {
   margin: 20px;
+  font-family: "Catamaran", sans-serif;
 }
 
 #profile {
-  max-width: 175px;
-  border-radius: 87.5px;
+  max-width: 200px;
+  border-radius: 100px;
 }
 
 .top {
@@ -33,15 +39,16 @@ p {
 .profilepic {
   display: flex;
   justify-content: center;
-  width: 30vw;
+  width: 40vw;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
   color: rgb(255, 255, 255);
-  width: 70vw;
+  width: 60vw;
   font-size: 1.5em;
+  padding-left: 50px;
 }
 
 .middle {
@@ -52,7 +59,7 @@ p {
 .left {
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 40vw;
   color: rgb(122, 54, 37);
   margin: 30px 10px 30px 30px;
 }
@@ -60,7 +67,12 @@ p {
 .right {
   display: flex;
   flex-direction: column;
-  width: 70vw;
+  width: 60vw;
   background-color: rgba(132, 55, 39, 0.25);
   color: rgb(122, 54, 37);
+  padding: 30px 10px 30px 30px;
+}
+
+.contact {
+  margin: 0px 20px;
 }/*# sourceMappingURL=styles.css.map */

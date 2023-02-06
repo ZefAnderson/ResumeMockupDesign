@@ -3,7 +3,6 @@
 
 body {
     margin: 0px;
-    font-family: $betterFont;
 }
 img {
     margin: 0px;
@@ -12,13 +11,19 @@ img {
 }
 h1 {
     margin: $myMargin;
+    font-family: $betterFont;
+}
+h2 {
+    margin: $myMargin;
+    font-family: $betterFont;
 }
 p {
     margin: $myMargin;
+    font-family: $betterFont;
 }
 #profile {
-    max-width: 175px;
-    border-radius: 87.5px;
+    max-width: 200px;
+    border-radius: 100px;
 }
 .top {
     display: flex;
@@ -30,14 +35,15 @@ p {
 .profilepic {
     display: flex;
     justify-content: center;
-    width: $thirtywide;
+    width: $fourtywide;
 }
 .banner {
     display: flex;
     flex-direction: column;
     color: $bannercolor;
-    width: $seventywide;
-    font-size: $fontsize;
+    width: $sixtywide;
+    font-size: 1.5em;
+    padding-left: 50px;
 }
 .middle {
     display: flex;
@@ -46,14 +52,18 @@ p {
 .left {
     display: flex;
     flex-direction: column;
-    width: $thirtywide;
+    width: $fourtywide;
     color: $bodycolor;
     margin: 30px 10px 30px 30px;
 }
 .right {
     display: flex;
     flex-direction: column;
-    width: $seventywide;
+    width: $sixtywide;
     background-color: $bgcolor;
     color: $bodycolor;
+    padding: 30px 10px 30px 30px;
+}
+.contact {
+    margin: 0px 20px;
 }
