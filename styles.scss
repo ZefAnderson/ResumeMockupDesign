@@ -1,23 +1,6 @@
 @use "variables" as *;
 @use "base" as *;
 
-body {
-    margin: 0px;
-}
-img {
-    margin: 0px;
-    width: 100%;
-    height: auto;
-}
-h1 h2 p {
-    @include words;
-}
-a:visited {
-    color: blue;
-}
-a:hover {
-    color: $bgcolor;
-}
 @mixin row {
     display: flex;
     flex-direction: row;
@@ -30,12 +13,35 @@ a:hover {
     margin: $myMargin;
     font-family: $betterFont;
 }
+body {
+    margin: 0px;
+}
+img {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+}
+h1, h2, p {
+    @include words;
+}
+li {
+    text-align: start;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    color: $bgcolor;
+}
 #profile {
-    max-width: 200px;
-    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    align-self: center; 
 }
 .top {
-    @include row;
+    @include column;
+    align-items: center;
     background-image: url("images/throneworld.jpg");
     background-size: cover;
     padding: 40px 20px;
@@ -43,29 +49,69 @@ a:hover {
 .profilepic {
     display: flex;
     justify-content: center;
-    width: $fourtywide;
 }
 .banner {
     @include column;
     color: $bannercolor;
-    width: $sixtywide;
     font-size: 1.5em;
-    padding-left: 50px;
+    text-align: center;
 }
 .middle {
-    @include row;
+    @include column;
 }
 .left {
     @include column;
-    width: $fourtywide;
     color: $bodycolor;
-    margin: 30px 10px 30px 30px;
+    text-align: center;
+    padding: 30px 10px 30px 30px;
 }
 .right {
     @extend .left;
-    width: $sixtywide;
     background-color: $bgcolor;
 }
 .contact {
     margin: 0px 20px;
+}
+@media screen and (min-width: 630px) {
+    .top {
+        @include row;
+        background-image: url("images/throneworld.jpg");
+        background-size: cover;
+        padding: 40px 20px;
+    }
+    .profilepic {
+        display: flex;
+        justify-content: center;
+        width: $fourtywide;
+    }
+    .banner {
+        @include column;
+        text-align: start;
+        color: $bannercolor;
+        width: $sixtywide;
+        font-size: $fontsize;
+        padding-left: 50px;
+    }
+    .middle {
+        @include row;
+    }
+    .left {
+        @include column;
+        width: $fourtywide;
+        color: $bodycolor;
+        text-align: left;
+        padding: 30px 10px 30px 30px;
+    }
+    .right {
+        @include column;
+        width: $sixtywide;
+        background-color: $bgcolor;
+    }
+    #profile {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        align-self: center; 
+    }
+    
 }
