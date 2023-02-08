@@ -36,7 +36,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("images/throneworld.jpg");
+  background-image: url("images/throneworld.png");
   background-size: cover;
   padding: 40px 20px;
 }
@@ -79,7 +79,7 @@ a:hover {
   .top {
     display: flex;
     flex-direction: row;
-    background-image: url("images/throneworld.jpg");
+    background-image: url("images/throneworld.png");
     background-size: cover;
     padding: 40px 20px;
   }

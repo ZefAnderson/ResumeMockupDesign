@@ -42,7 +42,7 @@ a:hover {
 .top {
     @include column;
     align-items: center;
-    background-image: url("images/throneworld.jpg");
+    background-image: url("images/throneworld.png");
     background-size: cover;
     padding: 40px 20px;
 }
@@ -75,7 +75,7 @@ a:hover {
 @media screen and (min-width: 630px) {
     .top {
         @include row;
-        background-image: url("images/throneworld.jpg");
+        background-image: url("images/throneworld.png");
         background-size: cover;
         padding: 40px 20px;
     }
